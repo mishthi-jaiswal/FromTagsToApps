@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Hospital</title>
+</head>
+
+<body>
+    <h1>Patient Registration</h1>
+
+    <!--text,number,email,password,radio, checkbox-->
+    <!--other elements - <select>, <text-area>    -->
+    <!--submit,reset,button-->
+    <!--attributes: required, autofocus, pattern-->
+
+    <form action="submit.html" method="post">
+        <div>
+            <label for="firstname">First Name</label> <!--POINT 1: for of label & id of input must be same-->
+            <input type="text" id="firstname" name="fname" placeholder="Enter pateint name" required >
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lname" placeholder="Enter pateint name">
+
+        </div> <!--div is a block element-->
+
+        <div>
+            <label>Select the Gender : </label>
+
+            <input type="radio" id="female"  name="gender" value="female">
+            <label for="female">Female</label>
+            <!--POINT 2: to connect 2 radio buttons their name must be same-->
+            <input type="radio" id="male"  name="gender" value="male">
+            <label for="male">Male</label>
+        </div>
+
+        <div>
+            <!--POINT 2: to connect 2 checkboxes their name must be same-->
+
+            <label>Select the symptoms : </label>
+            <input type="checkbox" name="cold" id="cold" value="cold">
+
+            <label for="cold">cold</label>
+            <input type="checkbox" name="fever" id="fever" value="fever">
+            <label for="fever">fever</label>
+
+            <input type="checkbox" name="cough" id="cough" value="cough">
+            <label for="cough">cough</label>
+
+            <input type="checkbox" name="vomit" id="vomit" value="vomit">
+            <label for="vomit">vomit</label>
+        </div>
+
+        <div>
+            
+            <label for="phone">Contact No</label>
+            <input type="tel" id="phone" name="contact" placeholder="Enter your phone no" required pattern="[0-9]{10}"> 
+            <!--Required feilds-->  
+            <!--patterns using Regex-->
+            <!--you can't use pattern attribute with type="number"-->
+
+        </div>
+
+        <div>
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="mail" autofocus>
+            <!--autofocus: automatically places cursor on an element when the page loads.Also you can have only 1 autofocus input feild in a form-->
+        </div>
+
+        <div>
+            <label for="pw">Password</label>
+            <input type="password" name="pass" id="pw">
+        </div>
+
+        <div>
+            <label for="doc">Select the doctor:</label>
+            <select name="doctor" id="doc">
+                <option value="Dr. Morepen">Dr. Morepen</option>
+                <option value="Dr. Joseph">Dr.Josephn</option>
+                <option value="Dr. Zainul">Dr. Zainul</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="rem">Any Remark by patient:</label><br>
+            <textarea name="remark" id="rem" cols="70" rows="5">Enter your remark here!</textarea>
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>
