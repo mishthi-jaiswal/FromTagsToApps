@@ -1,0 +1,15 @@
+p{
+    background-color: aqua;  /*css for TAG*/
+}
+
+.white{
+    color: rgb(249, 249, 249);   /*css for CLASS*/
+}
+
+.bg-red{
+    background-color: rgb(227, 68, 68);
+}
+
+#blue{
+    color: rgb(123, 123, 247);     /*css for ID*/
+}

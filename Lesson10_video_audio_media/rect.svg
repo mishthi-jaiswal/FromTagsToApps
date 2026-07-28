@@ -1,0 +1,8 @@
+<!--you have to add below code(attribute for namespace declaration) in order to make this svg-->
+<!--CODE: xmlns="http://www.w3.org/2000/svg" -->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="600">
+        <rect height="100" width="500" style="stroke:black ; stroke-width:4 ;fill:blue" ></rect>
+</svg>
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Audio Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--TOPICS : video,audio,svg,iframe-->
+
+    <!--video attributes : src, controls, autoplay, loop, muted , poster, width and height-->
+    <video src="popcorn.mp4" controls width="350"  loop muted autoplay poster="tiger.jpeg"></video> 
+
+    <!--audio attributes : src, controls, autoplay, loop, muted , preload(none[by default], metadata,auto)-->
+    <audio src="Run Down The City.mp3" autoplay loop muted controls></audio>
+
+
+    <!--SVG-->
+    <!--1.Inline -->
+    <svg width="300" height="200">
+        <circle cx="200" cy="100" r="50" stroke="green" stroke-width="4" fill="red"></circle>
+    </svg>
+
+    <!--2.SVG in img tag-->
+    <img src="rect.svg" alt="SVG example">
+
+    <!--iframe  attributes: src, height and width , frameborder (0 or 1), scrolling("yes","no","auto"[by default])-->
+    <iframe src="https://www.codewithharry.com/tutorial/html-iframes" frameborder="1" height="500" width="800"></iframe>
+    <!--frameborder is DEPRICATED ,that's why it is not visible-->
+   
+
+    <!--Google Map Location: for that click on share and then embed-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.521583403818!2d76.84910737509351!3d23.077994879134916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397ce9ceaaaaaaab%3A0xa224b6b82b421f83!2sVIT%20Bhopal%20University!5e0!3m2!1sen!2sin!4v1785271691564!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    <!--Youtube video: for that click on share and then embed and tou can also choose START TIMESTAMP-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=xkQLnGlKHCsujp2O&amp;start=768" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    
+</body>
+</html>
