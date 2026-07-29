@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+header{
+    background-color: rgb(246, 194, 220);
+}
+nav{
+    background-color: rgb(233, 91, 162);
+}
+
+article{
+    background-color: rgb(235, 181, 208);
+}
+#video{
+    background-color: rgb(173, 218, 218);
+}
+#audio{
+    background-color: rgb(173, 218, 218);
+}
+footer{
+    background-color: beige;
+}
+aside{
+    background-color: bisque;
+}

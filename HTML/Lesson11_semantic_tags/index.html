@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Learning Semantic Tags</h1>
+        <nav>
+            <ul type="square" style="display: flex; gap: 70px;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tutorial</a></li>
+                <li><a href="#">Contact</a></li>
+                <!--the "#" in href takes you to the top of the page.Used as placeholder for links , when our pages are not ready-->
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--To have aside (left) and main(right), we are creating a parent tag <div> and adding the display:flex-->
+
+    <div style="display: flex ; gap:50px">
+    <aside>
+        <p>This is Aside content</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">Semantic Tags</a></li>
+                <li><a href="#">Media Tags</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">CSS</a></li>
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <article>
+            <h2>My Article</h2>
+            <p>Hello everybody! I am learning semantic tags Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                totam blanditiis, quibusdam officiis commodi optio cum nemo perferendis hic cupiditate, ipsam asperiores
+                veniam!</p>
+
+            <figure>
+                <img src="..\Lesson05_img_table_list\train_img.png" alt="Train example" width="400" height="300">
+                <!--in HTML we need to give RELATIVE PATHS not absolute path.So that,s why I added ..\ (means go to one level up folder)-->
+
+                <figcaption>FigCaption : Pink train in Cherry Blossoms</figcaption>
+            </figure>
+
+        </article>
+
+        <section>
+            <h2>My Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum eveniet hic ducimus vel nihil
+                accusamus totam ex nesciunt? Perferendis unde facere nostrum, cum delectus consequuntur sint id illo
+                officiis.</p>
+        </section>
+    </main>
+    </div>
+
+
+
+    <footer>
+        <p>Copyright MJ | All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

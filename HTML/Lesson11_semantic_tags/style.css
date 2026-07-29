@@ -1,0 +1,21 @@
+header{
+    background-color: rgb(221, 146, 229);
+}
+nav{
+    background-color: rgb(214, 226, 163);
+}
+footer{
+    background-color: bisque;
+}
+main{
+    background-color: rgb(130, 174, 228);
+}
+aside{
+    background-color: rgb(222, 160, 205);
+}
+section{
+    background-color: rgb(222, 219, 160);
+}
+figcaption{
+    background-color: rgb(216, 56, 189);
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneuos HTML Topics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--TOPIC 1 - ENTITIES-->
+    <h2>ENTITIES</h2>
+    <p>&lt;p&gt;This is a paragraph tag&lt;/p&gt;</p> <!--less than, greater than-->
+    <p>This is ampersand &amp;.</p> <!--Apersand &-->
+    <p>This is &copy; copyright MJ</p> <!--copyright symbol-->
+    <p>I am saying Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque quos officia repudiandae reprehenderit sequi autem tenetur, fugiat ad unde dignissimos asperiores, voluptatem omnis officiis rem cum, error recusandae commodi eveniet. Recusandae voluptate rerum alias itaque deleniti consectetur vero, hic totam fuga, voluptates tempore adipisci. Eum ut ipsum sint magni laudantium! Sint minima facere veritatis et sed cum ut illum quidem quas beatae sunt accusantium ducimus, harum animi cumque nobis ullam sapiente ipsa quia iste! Facere, dolore? Asperiores doloremque ad impedit maiores, saepe debitis? Fugiat veritatis exercitationem impedit modi sapiente ratione illum ?Hello&nbsp;World.</p>  
+    <!--nbsp is non breaking space which means it ities the two words "Hello" and "World" together. The browser treats Hello World as connected. It will not separate them onto different lines.-->
+    <hr>
+
+
+
+
+
+
+    <!--TOPIC 2- QUOTATION TAGS-->
+    <h2>Quotation Tags</h2>
+
+    <!--block level quote-->
+    <p>Albert Einstein once said : </p>
+    <blockquote cite="https://www.goodreads.com/quotes/556030-imagination-is-more-important-than-knowledge-for-knowledge-is-limited">Imagination is more important tahn knowledge.</blockquote>
+    <!--the quote has been taken from cited URL.But it doesnt display on page , it is only a METADATA for browser-->
+
+    <!--inline quotes-->
+    <span>Albert Einstein once said : </span>
+    <q cite="https://www.goodreads.com/quotes/556030-imagination-is-more-important-than-knowledge-for-knowledge-is-limited">Imagination is more important tahn knowledge.</q>
+    <hr>
+
+
+
+
+    <!--TOPIC 3- CANVAS TAG-->
+    <h2>Canvas Tag</h2>
+
+    <canvas width="500" height="500"></canvas><!--style with CSS-->
+    <hr>
+
+
+
+    <!--TOPIC 4- PRE TAG-->
+    <h2>PRE TAG</h2>
+    <!--without pre-->
+    <p>Hello my         name is 
+        MISHTHI
+        JAISWAL
+    </p>
+
+    <!--with pre, it displays as it is!-->
+    <pre>Hello my         name is 
+        MISHTHI
+        JAISWAL
+    </pre>
+    <hr>
+
+
+
+
+    <!--TOPIC 5- CODE TAG-->
+    <h1>Code Tag</h1>
+    <!--inline-->
+    <span>Code to print in JAVA : </span>
+    <code>System.out.println("Hello World")</code>
+
+    <!--Block level :combined with pre-->
+    <pre>
+        <p>Following is CPP code</p>
+        <code>
+            #include&lt;iostream&gt;;
+            using namespace std;
+
+            int main(){
+                int a=12;
+                int b=13;
+                int sum=a+b
+
+                if(sum&gt;50){
+                    System.out.println("Large")
+                }
+                else{
+                    System.out.println("Small")
+                }
+                return 0;
+            }
+
+        </code>
+    </pre><hr>
+
+
+
+
+    <!--TOPIC 6 :OBSELETE TAGS and their MODERN CSS REPLACEMENTS-->
+    <h2>OBSELETE TAGS and their MODERN CSS REPLACEMENTS</h2>
+
+    <!--obselete-->
+    <font color="red" size="40" face="verdana">hello world</font><br>
+    
+    <center>This is the centred text </center>
+    <u>This is underlined text</u>
+    <br><br>
+
+
+    <!--modern CSS alternatives-->
+    <h3>modern css lternatives</h3>
+    <div style="text-align: center;">
+    <span style="color: rgb(219, 107, 219); background-color: black; font-size: 40px; font-family:fantasy; text-decoration: underline; ">Hello World</span>
+    </div>
+
+</body>
+</html>
