@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectors</title>
+    <title>CSS Selectors</title>
+
+    <style>
+        /*Element Selector*/
+        p{
+            background-color: bisque;
+        }
+
+        /*Class Selector*/
+        .violet{
+            background-color: blueviolet;
+            color: white;
+        }
+
+        /*ID Selector*/
+        #green{
+            background-color: greenyellow;
+        }
+
+        /*Child Selectors--style is only applicable for <p> tags that are direct children of <div> , not grandchild, not greatgrand child*/
+        div > p{
+            background-color: black;
+            color: white;
+        }
+
+        /*Descendant Selector ---it is applicable for <span> tags which are either direct or indirect children(descendant) of <div>*/
+        div span{
+            background-color: aqua;
+            
+        }
+
+        /*Universal Selector- applied to all elements*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+    </style>
 </head>
 <body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus impedit ipsa sed voluptate tempore!
+    </p>
+
+    <p class="violet">This is a para </p> <!--CLASS SELECTOR-->
+
+    <p id="green">This is a para </p> <!--ID SELECTOR-->
+
+    <div>
+        <p>I am direct child.</p> <!--<p> is direct child of <div> here , so CHILD SELECTOR is applicable here-->
+    </div>
+
+    <div>
+        <article>
+            <p>I am indirect child .Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae.</p> <!--<p> is not a direct child of <div> here , so child selector is not applicable here.ELEMENT SELECTOR is applicable here-->
+
+        </article>   
+    </div>
+    
+
+    <div>
+        <article>
+            <span>I am a descendant (indirect child)</span> <!--DESCENDANT SELECTOR-->
+        </article>
+    </div>
+
+    <div>
+            <span>I am a descendant(direct child)</span><!--DESCENDANT SELECTOR-->
+    </div>
+
+
+
+
     
 </body>
 </html>
