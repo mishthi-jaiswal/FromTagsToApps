@@ -6,6 +6,13 @@
     <title>CSS Selectors</title>
 
     <style>
+        /*  type of selectors
+            2. id (#)
+            3. class (.) and pseudo class (a:hover , link, active, visited , first-child, last-child, etc)
+            4. element (like p{}) and pseudo element (like p::first-letter, others like first-line, after, before etc) 
+            5. universal selector(*)
+        */
+
         /*Element Selector*/
         p{
             background-color: bisque;
@@ -22,6 +29,14 @@
             background-color: greenyellow;
         }
 
+
+
+
+        /* combinators - 
+        1.child selector(>) means direct child 
+        2.descendant ( ) means direct or indirect child
+        3.adjacent sibling(+)
+        4.general sibling(~)
         /*Child Selectors--style is only applicable for <p> tags that are direct children of <div> , not grandchild, not greatgrand child*/
         div > p{
             background-color: black;
@@ -34,12 +49,42 @@
             
         }
 
+
+
+
+
+
         /*Universal Selector- applied to all elements*/
         *{
             margin: 0;
             padding: 0;
         }
 
+
+        /*Pseudo Selector*/
+        a:link{ /*link that is not visited yet*/
+            color: rgb(203, 13, 178);
+        }
+
+        a:hover{
+            background-color:yellow ;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        p:first-child{ /*whereever the <p> tag is the first child of it's parent , apply this style*/
+            background-color: chocolate;
+        }
+
+        /*You don't need to memorize a long priority order. You will decide the priority by SPECIFICITY */
+        /*Specificity = a way CSS decides which selector is more powerful when multiple CSS rules apply to the same element.*/
+        /* inline=1000, id=100, class/pseudo class=10, element / pseudo element=1, universal=0, combinators(>, , +,~)=0*/
 
     </style>
 </head>
@@ -61,7 +106,7 @@
 
         </article>   
     </div>
-    
+
 
     <div>
         <article>
@@ -73,6 +118,13 @@
             <span>I am a descendant(direct child)</span><!--DESCENDANT SELECTOR-->
     </div>
 
+    <a href="http://www.google.com">Go to Google</a> <!--PSEUDO SELECTOR-->
+
+    <div>
+        <p>hello i am the first child</p> <!--PSEUDO SELECTOR :first-child-->
+        <p>hello i am the second child</p>
+        <span>hello i am the third child</span>
+    </div>
 
 
 
