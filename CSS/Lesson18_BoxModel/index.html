@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: rgb(137, 137, 207);
+        }
+        .box1{
+            color: brown;
+            padding: 10px; /*padding retains the bg as padding is part of the element*/
+            border : 2px solid black;
+            margin: 5px; /*margin doesn't retain the bg as it is not part of the element ...it is outside the element*/
+            height: 200px;
+
+            /*if you write this then it considers the (content+padding+border)height=200px , else it considers only content height=200px*/
+            box-sizing: border-box;
+        }
+        .box2{
+            color: rgb(142, 42, 165);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>
