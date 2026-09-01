@@ -17,7 +17,7 @@
             color: brown;
             padding: 10px; /*padding retains the bg as padding is part of the element*/
             border : 2px solid black;
-            margin: 5px; /*margin doesn't retain the bg as it is not part of the element ...it is outside the element*/
+            margin: 25px; /*margin doesn't retain the bg as it is not part of the element ...it is outside the element*/
             height: 200px;
 
             /*if you write this then it considers the (content+padding+border)height=200px , else it considers only content height=200px*/
@@ -25,11 +25,13 @@
         }
         .box2{
             color: rgb(142, 42, 165);
+            margin: 35px;
         }
     </style>
 </head>
 <body>
     <div class="box box1">I am a box</div>
     <div class="box box2">I am another box</div>
+    //here when the margin below the box1 collapses with the margin above the box2 then , the higher margin among the 2 boxes is kept only ..ie here the space btw 2 boxes is 35px 
 </body>
 </html>
