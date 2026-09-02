@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASCADE ALGO</title>
+
+    CASCADE ALGO 
+    1.position or order (if same type of selector)
+    2.specificity (if diff types of selector) : inline > id > class or pseudoclass or attribute > element/pseudo element > universal selector
+    3.Origin : My authored CSS> Browser style
+    4. Importance : !importance (highest priority, even higher than inline)
+    <style>
+        h1{
+            background-color: blueviolet;
+        }
+        .cyellow{
+            background-color: blue;
+            color:yellow !important /*highest priority , even higher than inline */
+        }
+        
+
+        [data-x="a"]{
+            background-color: bisque;
+        }
+        
+        .cred{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:white" class="cyellow cred" data-x="a">HELLO EVERYONE</h1>
+</body>
+</html>
