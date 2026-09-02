@@ -17,7 +17,7 @@
         /*--How to use Google fonts
         2 ways - import(inside <style>) and link(inside<head>)*/
 
-        /**Google fonts import- 2 fonts -"baloo bhai" and "poppins"*/ 
+        /*Google fonts import- 2 fonts -"baloo bhai" and "poppins"*/ 
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         h1{
             font-family:"Poppins",'Courier New', Courier, monospace;
@@ -27,13 +27,43 @@
             font-style: italic;
             font-weight:900; /*for bold*/
             text-decoration:underline;
+            font-size:20px;
+            line-height: 60px; /*space btw lines of para*/ 
+            letter-spacing:10px;
+        }
+        h2{
+            text-align: center;
+            text-transform:uppercase;
+            text-decoration:underline;
+            text-decoration-color: blue;
+            text-decoration-style:wavy ;
+            text-decoration-thickness:7px;
+            text-indent: 20px;
+            
+
+        }
+
+        h3{
+            width: 30px;
+            border: 5px solid red;
+
+
+            overflow: hidden;
+            text-overflow:ellipsis;        /*when text flows out of the box then how to handle*/ 
+            /* word-break: break-all; */
+
+
         }
     </style>
 </head>
 <body>
     <div>
         <h1> CSS Fonts </h1>
+        <h2>this is a heading</h2>
         <p>Leaning about fonts</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, debitis nobis, itaque quia eligendi ullam neque blanditiis quam est voluptate nemo enim. Vel dolor dignissimos tempore quibusdam delectus unde reiciendis tenetur, beatae numquam vero ab rerum dolores. Quo minus commodi nesciunt impedit odit, eum, delectus inventore consectetur consequatur, rem aperiam architecto et</p>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem quia sint. Vitae at deserunt ullam esse corrupti ex architecto!<h3>
+
     </div>
 
     
@@ -41,3 +71,9 @@
     
 </body>
 </html>
+
+
+<!--*****SUPER TRICK****-->
+<!--right click -> inspect->styles
+here , you can change the styles temporarily 
+if you like it just copy paste that code in your original code-->
