@@ -5,31 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CASCADE ALGO</title>
 
-    CASCADE ALGO 
+    <!-- CASCADE ALGO 
     1.position or order (if same type of selector)
     2.specificity (if diff types of selector) : inline > id > class or pseudoclass or attribute > element/pseudo element > universal selector
     3.Origin : My authored CSS> Browser style
-    4. Importance : !importance (highest priority, even higher than inline)
+    4. Importance : !importance (highest priority, even higher than inline) -->
     <style>
+        /* specificity of element selector is 1 */
         h1{
             background-color: blueviolet;
         }
+
+        /* specificity of element selector is 10 */
         .cyellow{
             background-color: blue;
             color:yellow !important /*highest priority , even higher than inline */
         }
         
-
+        /* specificity of attribute selector is 10 */
         [data-x="a"]{
             background-color: bisque;
         }
-        
+
+        /* specificity of this compound selector = 1(element) +10(class) =11*/
+        h1.cyellow{
+            color:rgb(70, 153, 84);
+        }
+
+        /* specificity of element selector is 10 */
         .cred{
             background-color: hotpink;
         }
+
+        /* specificity of this compound selector =1+10+10+10+10=41 */
+        a.harryclass.rohan-class[href]:hover{
+            background-color: bisque;
+        }
+
+
     </style>
 </head>
 <body>
-    <h1 style="color:white" class="cyellow cred" data-x="a">HELLO EVERYONE</h1>
+    <h1 class="cyellow cred" data-x="a">HELLO EVERYONE</h1>
 </body>
 </html>
