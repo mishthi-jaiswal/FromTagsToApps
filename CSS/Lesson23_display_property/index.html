@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--we studied 
+        display: inlnie / inline-block/ flex/inline-flex/grid/inline-grid
+        display: none
+        visibility: hidden    
+    -->
+
+    <style>
+        div {
+            border: 2px solid red;
+        }
+
+        span {
+            border: 2px solid green;
+            padding: 50px;
+        }
+
+        .box {
+            display: inline;
+            margin: 20px 50px;
+            /*top margin --not working*/
+            padding: 50px;
+            /*top padding --not working*/
+            /*similarly width and height reflect no change*/
+        }
+
+        .box1 {
+            display: inline-block;
+            /*here everything works*/
+            margin: 25px;
+            padding: 80px;
+            width: 200px;
+
+
+        }
+
+        .hide {
+            visibility: hidden;
+            /*only the content is not visible but the space taken by it is visible
+            /* display:none; */
+            /*both content and space taken by it is removed*/
+
+        }
+
+        .box2 {
+
+            display:inline-flex;
+            justify-content: center; /*these two lines are written together*/
+
+            /* display: grid;
+            display: inline-grid; */
+
+
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1 hide">I am a girl Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="box box2">I am a boy</div>
+    <span>girls</span>
+    <span> are better </span>
+</body>
+
+</html>
