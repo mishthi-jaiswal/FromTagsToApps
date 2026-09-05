@@ -19,13 +19,13 @@
 
         .box1 {
             background-color: aqua;
-            position: sticky;
-            top:0px;
+            /* position: sticky;
+            top:0px; */
             
-            /* position: absolute; */
+            position: absolute;
             /*top is applied wrt to nearest positional ancestor*/
-            /* top:0px;
-            left:50px */
+            top:0px;
+            left:50px
 
 
 
@@ -57,11 +57,16 @@
 
         }
         .parent{
-            position: relative;
+            /* position: relative; */
             width:85vw;
             border: 2px solid red;
             margin: 35px;
             padding: 30px;
+
+            /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
         }
     </style>
 </head>
