@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Designing</title>
+
+    <style>
+        body{
+            background-color: rgb(228, 230, 232);
+            font-family:'Verdana', Segoe UI, Tahoma, Geneva, sans-serif;
+            
+        }
+        .base{
+            height: 533px;
+            width: 329px;
+            border: 2px solid rgb(132, 144, 157);
+            border-radius: 15px;
+            background-color: white;
+            padding:8px;
+            
+        }
+
+        .image{
+            width:100%;
+            border-radius: 10px;
+            height: 250px;
+
+        }
+        .tab{
+            display: inline-block;
+            margin: 4px;
+            padding: 2px 10px;
+            border: 2px solid rgba(93, 89, 89, 0.11);
+            border-radius: 20px;
+            
+            font-size: 12px;
+        }
+
+        .grey{
+            color:rgba(93, 89, 89, 0.544) ;
+        }
+
+        .read{
+            margin-top: 5px;
+            border-radius: 20px;
+            background-color: rgba(110, 163, 223, 0.401);
+            color: rgb(21, 115, 215);
+            font-size: 11px;
+            display: inline-block;
+            justify-content: center;
+            padding: 0px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="base">
+        <div>
+            <img class="image" src="https://static01.nyt.com/images/2022/11/03/travel/03travel-dark-tourism-woods/03travel-dark-tourism-woods-mediumSquareAt3X.jpg" >
+        </div>
+            <div class="tab grey">Nature</div>
+            <div class="tab grey">Forests</div>
+        <div>
+
+        <div>
+            <h1 style="font-size: 25px;">Green Forests</h1>
+        </div>
+        <div>
+            <p class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga necessitatibus magni sit sed in ratione vel labore corrupti hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, architecto?</p>
+        </div>
+        <div style="display:flex;justify-content: center;">
+            <div class="read" >
+            <p>Read More </p>
+        </div>
+        </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
