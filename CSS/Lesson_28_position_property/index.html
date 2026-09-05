@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,60 @@
     <style>
         /* by default ----position: static */
         /* other values : relative */
-        .box{
+        .box {
             border: 2px solid black;
             height: 130px;
-            width:80vw;
+            width: 80vw;
             margin: 3px;
             padding: 3px;
         }
-        .box1{
+
+        .box1 {
             background-color: aqua;
-            position: relative;
-            z-index: 2; /*box 1 stacked above box 2*/
+            position: absolute;
+            top:0px;
+            left:50px/*top is applied wrt to nearest positional ancestor*/
+            /* position: relative;
+            z-index: 2; */
+            /*box 1 stacked above box 2*/
         }
-        .box2{
+
+        .box2 {
             background-color: rgb(214, 222, 222);
-            position:relative;
-            bottom:35px;
-            left:45px;
-            z-index: 1;
+            
+            /* position: relative;
+            bottom: 35px;
+            left: 45px;
+            z-index: 1; */
         }
-        .box3{
+
+        .box3 {
             background-color: bisque;
         }
-        .box4{
+
+        .box4 {
             background-color: purple;
 
         }
+        .parent{
+            position: relative;
+            width:85vw;
+            border: 2px solid red;
+            margin: 35px;
+            padding: 30px;
+        }
     </style>
 </head>
+
 <body>
-    <div class="box box1"></div>
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-    <div class="box box4"></div>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+
+    </div>
+
 </body>
+
 </html>
